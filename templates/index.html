@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>💳 Fraud Detection</h2>
+
+    <form action="/predict" method="post">
+        <input type="text" name="Amount" placeholder="Amount" required>
+        <input type="text" name="V6" placeholder="V6" required>
+        <input type="text" name="V1" placeholder="V1" required>
+        <input type="text" name="V5" placeholder="V5" required>
+        <input type="text" name="V7" placeholder="V7" required>
+        <input type="text" name="V20" placeholder="V20" required>
+        <input type="text" name="V12" placeholder="V12" required>
+        <input type="text" name="V22" placeholder="V22" required>
+        <input type="text" name="V4" placeholder="V4" required>
+        <input type="text" name="V11" placeholder="V11" required>
+        <input type="text" name="V21" placeholder="V21" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction_text %}
+        <div class="result 
+        {% if 'Fraud' in prediction_text %}fraud{% else %}normal{% endif %}">
+            {{ prediction_text }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
