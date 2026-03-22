@@ -1,6 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv(r'F:\projects\credit card fraud prediction\creditcard.csv')
+# Dataset: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+df = pd.read_csv(Dataset)
 
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
