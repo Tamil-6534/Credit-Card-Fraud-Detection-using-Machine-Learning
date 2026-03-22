@@ -6,6 +6,15 @@
 </p>
 
 <hr>
+<h2>📊 Dataset</h2>
+<p>
+This project uses the Credit Card Fraud Detection dataset from Kaggle.<br>
+<a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" target="_blank">
+Download Dataset from Kaggle
+</a>
+</p>
+<hr>
+
 
 <h2>📌 Project Overview</h2>
 <p>
